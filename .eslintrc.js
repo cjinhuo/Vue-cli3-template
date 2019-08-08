@@ -4,7 +4,7 @@ module.exports = {
     node: true
   },
   extends: ['plugin:vue/recommended', 'plugin:import/warnings', 'plugin:promise/recommended'],
-  plugins: ['import', 'promise', 'airbnb'],
+  plugins: ['import', 'promise'],
   rules: {
     // 关闭 禁止使用console，生产环境不能使用console
     'no-console': 'off',
