@@ -1,5 +1,9 @@
+const path = require('path')
+function resolve(dir) {
+  return path.join(__dirname, dir)
+}
 module.exports = {
-  lintOnSave: undefined,
+  lintOnSave: true,
   publicPath: undefined,
   outputDir: undefined,
   assetsDir: undefined,
@@ -7,19 +11,20 @@ module.exports = {
   productionSourceMap: undefined,
   parallel: undefined,
   chainWebpack: (config) => {
-    config.devtool('source-map');
+    config.devtool('source-map')
+    config.resolve.alias.set('src', resolve('@'))
   },
   devServer: {
     proxy: {
       '/api': {
         target: ' https://www.easy-mock.com/mock/',
         changeOrigin: true,
-        pathRewrite: { '^/api': '5b7a5611f0e3593f36141420' },
-      },
-    },
+        pathRewrite: { '^/api': '5b7a5611f0e3593f36141420' }
+      }
+    }
   },
   css: {
     modules: false,
-    sourceMap: true,
-  },
-};
+    sourceMap: true
+  }
+}
