@@ -5,9 +5,6 @@ import NotFoundComponent from '@/components/NotFoundComponent'
 import EnterpriceService from '@/modules/EnterpriceService/routes'
 Vue.use(Router)
 
-const baseLayoutChild = EnterpriceService
-console.log(EnterpriceService)
-
 export default new Router({
   mode: 'history',
   routes: [

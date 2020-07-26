@@ -1,14 +1,13 @@
-import riskAssessment from './RiskAssessment/routes'
+import RiskAssessment from './RiskAssessment/routes'
+import MembershipService from './MembershipService/routes'
 export default {
-  path: 'enterpriceService',
+  path: '/enterpriceService',
   name: 'enterpriceService',
   component: BlankLayout,
   meta: {
     title: '企业服务',
-    // hideInMenu: true,
-    // hideInBreadcrumb: true,
     hideMenuLayout: false
   },
   redirect: { name: 'riskAssessment' },
-  children: [riskAssessment]
+  children: [RiskAssessment, MembershipService]
 }
