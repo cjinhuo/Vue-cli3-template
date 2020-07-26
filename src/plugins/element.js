@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Element from 'element-ui'
 import 'normalize.css'
+import CapsuleUI from '@zyf2e/capsule-ui'
 
-Vue.use(Element, {size: 'medium'})
+Vue.use(CapsuleUI)

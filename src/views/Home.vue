@@ -1,5 +1,6 @@
 <template lang="pug">
-  .home home
+  .home
+    el-button 123asda
 </template>
 <script>
 export default {
