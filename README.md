@@ -25,5 +25,5 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* icon
+命名规则: icon-【circle圆、square方，可选】-【名称(动词/形容词/名词)】-【line，fill可选】这种名称就很标准

@@ -1,4 +1,6 @@
 const path = require('path')
+const webpack = require('webpack')
+
 function resolve(dir) {
   return path.join(__dirname, dir)
 }
@@ -13,6 +15,13 @@ module.exports = {
   chainWebpack: (config) => {
     config.devtool('source-map')
     config.resolve.alias.set('src', resolve('@'))
+  },
+  configureWebpack: {
+    plugins: [
+      new webpack.ProvidePlugin({
+        BlankLayout: [path.resolve(resolve('./src/layouts/BlankLayout')), 'default']
+      })
+    ]
   },
   devServer: {
     proxy: {

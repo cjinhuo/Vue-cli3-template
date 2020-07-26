@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from '@/router'
 import './plugins/element'
 import '@zyf2e/capsule-ui/lib/theme-chalk/index.css'
+import '@/assets/css/index.css'
 import store from './store'
 Vue.config.productionTip = false
 

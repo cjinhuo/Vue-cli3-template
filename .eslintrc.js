@@ -5,6 +5,9 @@ module.exports = {
   },
   extends: ['plugin:vue/recommended', 'plugin:import/warnings', 'plugin:promise/recommended'],
   plugins: ['import', 'promise'],
+  globals: {
+    BlankLayout: true
+  },
   rules: {
     // 关闭 禁止使用console，生产环境不能使用console
     'no-console': 'off',
