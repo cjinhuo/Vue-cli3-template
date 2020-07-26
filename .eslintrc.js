@@ -15,7 +15,7 @@ module.exports = {
     // 关闭 强制 generator 函数中 * 号周围有空格
     'generator-star-spacing': 'off',
     // 强制缩进2格
-    indent: ['error', 2],
+    // indent: ['error', 2],
     // 关闭 禁用不必要的转义字符
     'no-useless-escape': 'off',
     // 关闭 使用eval
@@ -50,22 +50,34 @@ module.exports = {
     // 'arrow-parens': ['error', 'as-needed'],
     'arrow-parens': 'off',
     // eslint-plugin-promise
-    "promise/always-return": "off",
-    "promise/no-return-wrap": "error",
-    "promise/param-names": "error",
-    "promise/catch-or-return": "error",
-    "promise/no-native": "off",
-    "promise/no-nesting": "warn",
-    "promise/no-promise-in-callback": "warn",
-    "promise/no-callback-in-promise": "warn",
-    "promise/avoid-new": "warn",
-    "promise/no-new-statics": "error",
-    "promise/no-return-in-finally": "warn",
-    "promise/valid-params": "warn",
+    'promise/always-return': 'off',
+    'promise/no-return-wrap': 'error',
+    'promise/param-names': 'error',
+    'promise/catch-or-return': 'error',
+    'promise/no-native': 'off',
+    'promise/no-nesting': 'warn',
+    'promise/no-promise-in-callback': 'warn',
+    'promise/no-callback-in-promise': 'warn',
+    'promise/avoid-new': 'warn',
+    'promise/no-new-statics': 'error',
+    'promise/no-return-in-finally': 'warn',
+    'promise/valid-params': 'warn',
     // eslint-plugin-vue
     'vue/require-default-prop': 'warning',
     'vue/no-v-html': 'warning',
-    'vue/no-use-v-if-with-v-for': 'off'
+    'vue/no-use-v-if-with-v-for': 'off',
+    // 强制每行的最大属性数
+    'vue/max-attributes-per-line': [
+      'error',
+      {
+        singleline: 2,
+        multiline: {
+          max: 1,
+          allowFirstLine: false
+        }
+      }
+    ],
+    'vue/html-self-closing': ['off']
   },
   parserOptions: {
     parser: 'babel-eslint'

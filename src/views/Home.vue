@@ -1,33 +1,18 @@
-<template>
-  <div class="home">
-    <img
-      alt="Vue logo"
-      src="../assets/logo.png"
-    >
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+<template lang="pug">
+  .home home
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
 export default {
   name: 'Home',
-  components: {
-    HelloWorld
-  },
   methods: {
     test() {
-      switch(a) {
-      case '1':
-        break
+      switch (a) {
+        case '1':
+          break
       }
       if (true) {
         let a = 2
       }
-
-      // const a = '2'
     }
   }
 }
